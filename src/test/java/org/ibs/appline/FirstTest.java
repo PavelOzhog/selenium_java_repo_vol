@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class FirstTest {
@@ -166,6 +168,29 @@ public class FirstTest {
         Assert.assertEquals("Данные введены не верно", phoneField.getAttribute("value"), maskRu + " (111) 111-11-11");
 
     }
+
+
+
+//    public void switchToByText(String text) {
+//        //      Получаем идентификатор вкладки на которой мы сейчас находимся
+//        String parentWindow = driver.getWindowHandle();
+////      Получаем список вкладок
+//        List<String> vkladki = new ArrayList<>(driver.getWindowHandles());
+//        for (String windowHandle : vkladki) {
+////          Если не совпал идентификатор с нашей вкладкой значит нужно переключиться
+////          Т.е. попадем в if
+//            if (!windowHandle.equals(parentWindow)) {
+//                driver.switchTo().window(windowHandle);
+////              Проверка текста на вкладке если текст совпал то останавливаем цикл
+//                if(driver.getTitle().equals(text)) {
+//                    return;
+//                }
+//            }
+//        }
+//        Assert.fail("Вкладка с текстом '" + text + "' не найдена");
+//    }
+
+
 
 }
 

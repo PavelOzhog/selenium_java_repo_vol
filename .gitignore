@@ -1,11 +1,7 @@
-#Folder ignoring
-
-.idea
-.out
+# Folders ignore for git
 target
+.idea
 
- #Folder ignoring
- *.iml
- *.jar
- *.war
- *.log
+# Files ignore for git
+*.iml
+.DS_Store
