@@ -1,11 +1,12 @@
 # Folders ignore for git
 
-.idea
-target
 
+target
+.idea
 
 Files ignore for git
-*.iml>
+*.iml
 *.jar
 *.war
 *.log
+
