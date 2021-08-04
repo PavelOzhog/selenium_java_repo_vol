@@ -5,3 +5,6 @@ target
 # Files ignore for git
 *.iml
 .DS_Store
+*.jar
+*.war
+*.log
