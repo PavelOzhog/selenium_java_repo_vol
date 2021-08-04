@@ -4,15 +4,12 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.NoSuchElementException;
+
 import java.util.concurrent.TimeUnit;
 
 public class FirstTest {
@@ -32,6 +29,7 @@ public class FirstTest {
         String baseUrl = "https://www.rgs.ru/";
         driver.get(baseUrl);
 
+        closeDynamicPopUp();
 
     }
 
@@ -75,7 +73,7 @@ public class FirstTest {
 
 
         fillPhone(By.xpath("//*[contains(@data-bind,'999')]"), "1111111111");                                                                   //заполнение телефона
-        fillDate(By.xpath("//div[@class='form-group col-md-6 col-xs-12']/*[contains(@data-bind,'ContactDate')]"), "03082021");                  //заполнение даты
+        fillDate(By.xpath("//div[@class='form-group col-md-6 col-xs-12']/*[contains(@data-bind,'ContactDate')]"), "04082021");                  //заполнение даты
 
         WebElement checkBoxFill = driver.findElement(By.xpath("//input[@class='checkbox' and @type='checkbox']"));              //заполнение check-box элемента
         checkBoxFill.click();
@@ -146,7 +144,7 @@ public class FirstTest {
         dateFiled.clear();
         dateFiled.sendKeys(value);
         dateFiled.sendKeys(Keys.RETURN);
-        Assert.assertEquals("Данные введены не корректна", "03.08.2021", dateFiled.getAttribute("value"));
+        Assert.assertEquals("Данные введены не корректна", "04.08.2021", dateFiled.getAttribute("value"));
     }
 
 
