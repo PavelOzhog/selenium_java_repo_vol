@@ -1,12 +1,10 @@
 # Folders ignore for git
 
 .idea
-target
 
 
-# Files ignore for git
-*.iml
-.DS_Store
+Files ignore for git
+*.iml>
 *.jar
 *.war
 *.log
