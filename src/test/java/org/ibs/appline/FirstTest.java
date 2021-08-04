@@ -120,6 +120,7 @@ public class FirstTest {
 
 
     public void fill(By locator, String value) {
+        closeDynamicPopUp();
         WebElement element = driver.findElement(locator);
         element.click();
         element.clear();
