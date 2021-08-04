@@ -1,6 +1,8 @@
 # Folders ignore for git
-target
+
 .idea
+target
+
 
 # Files ignore for git
 *.iml
