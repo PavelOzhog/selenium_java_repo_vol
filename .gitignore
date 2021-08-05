@@ -1,10 +1,10 @@
-
-target
+#
+target/
 .idea/
 
 
+#
 *.iml
 *.jar
 *.war
 *.log
-

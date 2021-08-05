@@ -7,15 +7,54 @@
     <groupId>first-Project</groupId>
     <artifactId>first-Project</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>name</id>
+        </repository>
+
+    </repositories>
+
+    <properties>
+
+        <!-- JAVA VERSION -->
+        <java.version>8</java.version>
+
+        <!-- Dependecy version -->
+
+        <junir.version>4.13.1</junir.version>
+
+        <!-- Dependecy version -->
+        <plugin.version>1</plugin.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+
+
+            </plugin>
+
+
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>7</source>
-                    <target>7</target>
+
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
+
+                <dependencies>
+                    <dependency>
+                        <groupId></groupId>
+                        <artifactId></artifactId>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
@@ -32,7 +71,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>${junir.version}</version>
             <scope>test</scope>
         </dependency>
 
